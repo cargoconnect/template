@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BooxModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="MS_Account">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="256" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="name" Type="nchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MS_Post">
+    <Key>
+      <PropertyRef Name="post_id" />
+    </Key>
+    <Property Name="post_id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="post_content" Type="text" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="BooxModelStoreContainer">
+    <EntitySet Name="MS_Account" EntityType="Self.MS_Account" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_Post" EntityType="Self.MS_Post" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
