@@ -348,18 +348,23 @@
                             </a>
                             <ul class="nav nav-sub dk">
                                 <li>
-                                    <a ui-sref="app.group">
-                                        <span>Group</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a ui-sref="master.role">
+                                    <a ui-sref="app.role">
                                         <span>Role</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a ui-sref="master.user">
                                         <span>User</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a ui-sref="master.user">
+                                        <span>Customer</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a ui-sref="master.user">
+                                        <span>Driver</span>
                                     </a>
                                 </li>
                                 <li>
@@ -375,18 +380,23 @@
                                     <i class="fa fa-fw fa-angle-right text"></i>
                                     <i class="fa fa-fw fa-angle-down text-active"></i>
                                 </span>
-                                <i class="glyphicon glyphicon-briefcase icon"></i>
-                                <span>Shipment</span>
+                                <i class="glyphicon glyphicon-tasks icon"></i>
+                                <span>Service</span>
                             </a>
                             <ul class="nav nav-sub dk">
-                                <li class="nav-sub-header">
-                                    <a href>
-                                        <span></span>
+                                <li>
+                                    <a ui-sref="service.ticket">
+                                        <span>Service</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a ui-sref="service.ticket">
                                         <span>Shipment</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a ui-sref="service.ticket">
+                                        <span>Claim</span>
                                     </a>
                                 </li>
                                 <li>
@@ -403,24 +413,28 @@
                                     <i class="fa fa-fw fa-angle-right text"></i>
                                     <i class="fa fa-fw fa-angle-down text-active"></i>
                                 </span>
-                                <i class="glyphicon glyphicon-briefcase icon"></i>
-                                <span>Claim</span>
+                                <i class="glyphicon glyphicon-blackboard icon"></i>
+                                <span>Report</span>
                             </a>
                             <ul class="nav nav-sub dk">
-                                <li class="nav-sub-header">
-                                    <a href>
-                                        <span></span>
+                                <li>
+                                    <a ui-sref="service.ticket">
+                                        <span>Revenue</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a ui-sref="service.claim">
-                                        <span>Claim</span>
+                                    <a ui-sref="service.ticket">
+                                        <span>Cost</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a ui-sref="service.knowledge">
-                                        <b class="badge bg-info pull-right">3</b>
-                                        <span>History</span>
+                                    <a ui-sref="service.ticket">
+                                        <span>Resource</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a ui-sref="service.ticket">
+                                        <span>Forecast</span>
                                     </a>
                                 </li>
                             </ul>
@@ -431,63 +445,35 @@
                                     <i class="fa fa-fw fa-angle-right text"></i>
                                     <i class="fa fa-fw fa-angle-down text-active"></i>
                                 </span>
-                                <i class="glyphicon glyphicon-file icon"></i>
+                                <i class="glyphicon glyphicon-globe icon"></i>
+                                <span>Map</span>
+                            </a>
+                            <ul class="nav nav-sub dk">
+                                <li>
+                                    <a ui-sref="service.ticket">
+                                        <span>Driver</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a ui-sref="service.ticket">
+                                        <span>Customer</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href class="auto">
+                                <span class="pull-right text-muted">
+                                    <i class="fa fa-fw fa-angle-right text"></i>
+                                    <i class="fa fa-fw fa-angle-down text-active"></i>
+                                </span>
+                                <i class="glyphicon glyphicon-flag icon"></i>
                                 <span>Setting</span>
                             </a>
                             <ul class="nav nav-sub dk">
-                                <li class="nav-sub-header">
-                                    <a href>
-                                        <span>Pages</span>
-                                    </a>
-                                </li>
                                 <li>
-                                    <a href="page_profile.html">
-                                        <span>Profile</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="page_post.html">
-                                        <span>Post</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="page_search.html">
-                                        <span>Search</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="page_invoice.html">
-                                        <span>Invoice</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="page_price.html">
-                                        <span>Price</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="page_lockme.html">
-                                        <span>Lock screen</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="page_signin.html">
-                                        <span>Signin</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="page_signup.html">
-                                        <span>Signup</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="page_forgotpwd.html">
-                                        <span>Forgot password</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="page_404.html">
-                                        <span>404</span>
+                                    <a ui-sref="service.ticket">
+                                        <span>Permission</span>
                                     </a>
                                 </li>
                             </ul>
