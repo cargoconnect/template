@@ -37,29 +37,13 @@ app.config(function ($urlRouterProvider, $stateProvider) {
             views: {
                 'menuContent': {
                     templateUrl: 'tpl/app_dashboard_v1.html',
+                    controller: '',
                 } 
             },
         })
 
-        // Group
-        .state('app.group', {
-            url: '/group',
-            views: {
-                'menuContent': {
-                    templateUrl: 'tpl/master/group/index.html',
-                }
-            },
-        })
+        /* master URL ------------------------------------------------*/
 
-        .state('app.creategroup', {
-            url: '/group/create',
-            views: {
-                'menuContent': {
-                    templateUrl: 'tpl/master/group/update.html',
-                }
-            },
-        })
-        
         //Role
         .state('app.role', {
             url: '/role',
@@ -100,21 +84,157 @@ app.config(function ($urlRouterProvider, $stateProvider) {
             },
         })
 
-        //Ticket
-        .state('app.ticket', {
-            url: '/ticket',
+        //Driver
+        .state('app.driver', {
+            url: '/driver',
             views: {
                 'menuContent': {
-                    templateUrl: 'tpl/service/ticket/index.html',
+                    templateUrl: 'tpl/master/driver/index.html'
+                }
+            }
+        })
+        .state('app.createdriver', {
+            url: '/driver',
+            views: {
+                'menuContent': {
+                    templateUrl: 'tpl/master/driver/update.html'
+                }
+            }
+        })
+
+        //Customer
+        .state('app.customer', {
+            url: '/customer',
+            views: {
+                'menuContent': {
+                    templateUrl: 'tpl/master/customer/index.html'
+                }
+            }
+        })
+        .state('app.createcustomer', {
+            url: '/customer/create',
+            views: {
+                'menuContent': {
+                    templateUrl: 'tpl/master/customer/update.html'
+                }
+            }
+        })
+
+        //Truck
+        .state('app.truck', {
+            url: '/truck',
+            views: {
+                'menuContent': {
+                    templateUrl: 'tpl/master/truck/index.html'
+                }
+            }
+        })
+        .state('app.createtruck', {
+            url: '/truck/create',
+            views: {
+                'menuContent': {
+                    templateUrl: 'tpl/master/truck/update.html'
+                }
+            }
+        })
+
+        //Claim Category
+        .state('app.claimcategory', {
+            url: '/claimcategory',
+            views: {
+                'menuContent': {
+                    templateUrl: 'tpl/master/claimcategory/index.html'
+                }
+            }
+        })
+        .state('app.createclaimcategory', {
+            url: '/claimcategory/create',
+            views: {
+                'menuContent': {
+                    templateUrl: 'tpl/master/claimcategory/update.html'
+                }
+            }
+        })
+
+
+
+        /* service URL ---------------------------------------------*/
+        
+        //Claim
+        .state('app.claim', {
+            url: '/claim',
+            views: {
+                'menuContent': {
+                    templateUrl: 'tpl/service/claim/index.html',
                     controller: '',
                 }
             },
         })
-        .state('service.createticket', {
-            url: '/ticket/create',
+        .state('service.createclaim', {
+            url: '/claim/create',
             views: {
                 'menuContent': {
-                    templateUrl: 'tpl/service/ticket/update.html',
+                    templateUrl: 'tpl/service/claim/update.html',
+                    controller: '',
+                }
+            },
+        })
+
+        //Fuel
+        .state('app.fuel', {
+            url: '/fuel',
+            views: {
+                'menuContent': {
+                    templateUrl: 'tpl/service/fuel/index.html',
+                    controller: '',
+                }
+            },
+        })
+        .state('service.createfuel', {
+            url: '/fuel/create',
+            views: {
+                'menuContent': {
+                    templateUrl: 'tpl/service/fuel/update.html',
+                    controller: '',
+                }
+            },
+        })
+
+        //Shipment
+        .state('app.shipment', {
+            url: '/shipment',
+            views: {
+                'menuContent': {
+                    templateUrl: 'tpl/service/shipment/index.html',
+                    controller: '',
+                }
+            },
+        })
+        .state('service.createshipment', {
+            url: '/shipment/create',
+            views: {
+                'menuContent': {
+                    templateUrl: 'tpl/service/shipment/update.html',
+                    controller: '',
+                }
+            },
+        })
+
+        //Shipment
+        .state('app.trip', {
+            url: '/trip',
+            views: {
+                'menuContent': {
+                    templateUrl: 'tpl/service/trip/index.html',
+                    controller: '',
+                }
+            },
+        })
+        .state('service.createtrip', {
+            url: '/trip/create',
+            views: {
+                'menuContent': {
+                    templateUrl: 'tpl/service/trip/update.html',
                     controller: '',
                 }
             },
