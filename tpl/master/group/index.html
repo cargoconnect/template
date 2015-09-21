@@ -1,0 +1,57 @@
+﻿<div class="bg-light lter b-b wrapper-md">
+    <h1 class="m-n font-thin h3">Manage Group</h1>
+    
+</div>
+<div class="wrapper-md">
+    <div>
+        <a class="btn m-b-xs btn-md btn-primary btn-addon" ui-sref="master.creategroup"><i class="fa fa-plus"></i>Create New Group</a>
+        <a class="btn m-b-xs btn-md btn-success btn-addon"><i class="fa fa-arrow-down"></i>Export Data</a>
+    </div>
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            Group
+        </div>
+        <div class="table-responsive">
+            <table ui-jq="dataTable" ui-options="{
+          sAjaxSource: 'api/datatable.json',
+          aoColumns: [
+            { mData: 'engine' },
+            { mData: 'browser' },
+            { mData: 'platform' },
+            { mData: 'version' },
+            { mData: 'grade' }
+          ]
+        }" class="table table-striped b-t b-b">
+                <thead>
+                    <tr>
+                        <th style="width:20%">Rendering engine</th>
+                        <th style="width:20%">Browser</th>
+                        <th style="width:20%">Platform(s)</th>
+                        <th style="width:19%">Engine version</th>
+                        <th style="width:7%"></th>
+                        <th style="width:7%"></th>
+                        <th style="width:7%"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <a href class="active" ui-toggle-class><i class="fa fa-list-alt text-success text-active"></i><i class="fa fa-send  text-danger text"></i></a>
+                        </td>
+                        <td>
+                            <a href class="active" ui-toggle-class><i class="fa fa-edit text-info text-active"></i><i class="fa fa-times text-danger text"></i></a>
+                        </td>
+                        <td>
+                            <a href class="active" ui-toggle-class><i class="fa fa-trash text-danger text-active"></i><i class="fa fa-times text-danger text"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
